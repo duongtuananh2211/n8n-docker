@@ -19,6 +19,7 @@ services:
     restart: always
     volumes:
       - .data/n8n:/home/node/.n8n
+      - .logs/n8n:/home/node/logs/n8n
     ports:
       - 5678:5678
     environment:
@@ -31,6 +32,10 @@ services:
       - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
       - EXECUTIONS_PROCESS=main
       - N8N_METRICS=true
+      - DB_LOGGING_OPTIONS=all
+      - DB_LOGGING_ENABLED=true
+      - N8N_LOG_OUTPUT=file
+      - N8N_LOG_FILE_LOCATION=/home/node/logs/n8n/n8n.log
     networks:
       - n8n-network
 

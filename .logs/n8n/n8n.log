@@ -1,0 +1,2 @@
+{"level":"error","message":"Last session crashed","metadata":{"file":"CrashJournal.js","function":"init","timestamp":"2023-04-22T07:22:18.927Z"}}
+{"level":"info","message":"Initializing n8n process","metadata":{"file":"start.js","function":"init","timestamp":"2023-04-22T07:22:29.324Z"}}
