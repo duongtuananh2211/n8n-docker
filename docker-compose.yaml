@@ -36,6 +36,9 @@ services:
       - DB_LOGGING_ENABLED=true
       - N8N_LOG_OUTPUT=file
       - N8N_LOG_FILE_LOCATION=/home/node/logs/n8n/n8n.log
+      # - N8N_JWT_AUTH_ACTIVE=true
+      # - N8N_JWKS_URI=/api/login
+      # - N8N_JWT_AUTH_HEADER=Authorization
     networks:
       - n8n-network
 
